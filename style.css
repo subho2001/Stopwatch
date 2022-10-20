@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(27, 29, 54);
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.4s linear;
+}
+body.white{
+    background-color: aliceblue;
+}
+.container{
+    background-color: rgba(158, 157, 157, 0);
+    width: 200px;
+    height: 310px;
+    border-radius: 8px;
+    margin-left: 3%;
+    display: inline-block;
+    margin-top: 4%;
+    box-shadow: 0px 0px 12px 4px rgb(4, 217, 255);
+}
+.container1{
+    background-color: rgba(49, 49, 49, 0.288);
+    width: 150px;
+    height: 100px;
+    display: flex;
+    margin-top: 8%;
+    margin-left: 15%;
+    border-radius: 100%;
+    border: 7px solid rgb(4, 217, 255);
+}
+.zero{
+    color: rgb(4, 217, 255);
+    margin-top: 20%;
+    margin-left: 4%;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.colon{
+    font-size: 1.4rem;
+    margin-top: 17%;
+}
+.fa-hourglass-start{
+    margin-top: 4%;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(4, 217, 255);
+}
+.line1{
+    margin-top: 3%;
+    border: 2px solid rgb(4, 217, 255);
+    background-color: rgb(4, 217, 255);
+}
+.line2{
+    margin-top: 6%;
+    border: 2px solid rgb(4, 217, 255);
+    background-color: rgb(4, 217, 255);
+}
+.btn-container{
+    display: flex;
+    margin-top: 4%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn-start button{
+    color: rgb(4, 217, 255);
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 12px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+    box-shadow: 0px 0px 4px 2px rgb(4, 217, 255);
+}
+p.Desc{
+    color: rgb(4, 217, 255);
+    background-color: transparent;
+    margin-top: 8%;
+    box-shadow: 0px 0px 4px 2px rgb(4, 217, 255);
+}
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    position: relative;
+    box-shadow: 0px 0px 4px 2px rgb(4, 217, 255);
+    padding: 5px;
+    height: 26px;
+    width: 75px;
+    margin-left: 36%;
+    margin-top: 4%;
+}
+.ball{
+    width: 40px;
+    height: 23px;
+    left: 2px;
+    border-radius: 50px;
+    background-color: rgb(4, 217, 255);
+    position: absolute;
+    transition: transform 0.4s linear;
+}
+.checkbox:checked + .label .ball{
+    transform: translate(32px);
+}
+.fa-moon{
+    color: rgb(4, 217, 255);
+    font-size: 1.3rem;
+}
+.fa-sun{
+    color: rgb(4, 217, 255);
+}
+
+@media screen and (min-width:360px){
+    .container{
+        width: 350px;
+        height: 480px;
+        margin-top: 20%;
+        margin-left: -2%;
+    }
+    .container1{
+        width: 250px;
+        height: 250px;
+        margin-left: 15%;
+        margin-top: 2%;
+    }
+    .zero{
+        margin-top: 42%;
+        margin-left: 5%;
+        font-weight: 800;
+        font-size: 1.9rem;
+    }
+    .colon{
+        margin-top: 38%;
+        font-size: 2.3rem;
+        font-weight: 800;
+    }
+    .fa-hourglass-start{
+        font-weight: 800;
+        font-size: 30px;
+    }
+    .btn-start button{
+        font-size: 1.4rem;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    p.Desc{
+        margin-top: 4%;
+    }
+    .label{
+        margin-left: 39.5%;
+    }
+}
+@media screen and (min-width:600px){
+    .container{
+        width: 580px;
+        height: 580px;
+        margin-top: 10%;
+    }
+    .container1{
+        width: 300px;
+        height: 300px;
+        margin-left: 25%;
+        margin-top: 3%;
+    }
+    .zero{
+        margin-top: 42%;
+        font-size: 2.1rem;
+        margin-left: 6%;
+    }
+    .colon{
+        margin-top: 38%;
+        font-size: 2.8rem;
+    }
+    .fa-hourglass-start{
+        font-size: 42px;
+    }
+    .line2{
+        margin-top: 3%;
+    }
+    .label{
+        margin-left: 43.5%;
+        margin-top: 4%;
+    }
+}
+@media screen and (min-width:800px){
+    .container{
+        width: 600px;
+        height: 630px;
+        margin-top: 3%;
+        margin-left: 2%;
+    }
+    .container1{
+    width: 350px;
+    height: 350px;
+    margin-top: 3%;
+    margin-left: 22%;
+    border-radius: 100%;
+    }
+    .zero{
+        margin-top: 43%;
+        font-size: 2.7rem;
+        margin-left: 5%;
+    }
+    .colon{
+        font-size: 3.2rem;
+        margin-top: 40%;
+    }
+    .btn-start button{
+        font-size: 1.8rem;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 18px;
+    }
+    .label{
+        margin-left: 42%;
+        margin-top: -1%;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100px;
+        height: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    .fa-moon{
+        margin-left: -15%;
+        font-size: 1.9rem;
+    }
+    .fa-sun{
+        margin-right: -15%;
+        font-size: 1.8rem;
+    }
+    .ball{
+        width: 45px;
+        height: 32px;
+    }
+    .checkbox:checked + .label .ball{
+        transform: translate(50px);
+    }
+}

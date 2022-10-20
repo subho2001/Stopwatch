@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <script src="https://kit.fontawesome.com/73635165a1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <i class="fa-solid fa-hourglass-start">Stopwatch</i>
+        <i class="fa-solid fa-hourglass-start"></i>
+        <hr class="line1">
+        <div class="container1">
+            <div class="hour1 zero" id="hr">00</div>
+            <div class="colon zero">::</div>
+            <div class="min1 zero" id="min">00</div>
+            <div class="colon zero">::</div>
+            <div class="sec1 zero" id="sec">00</div>                   
+        </div>
+        <hr class="line2">
+        <div class="btn-container">
+        <div id="start" class="btn-start"><button onclick="start()">START</button></div>
+        <div id="stop" class="btn-start"><button onclick="stop()">STOP</button></div>
+        <div id="reset" class="btn-start"><button onclick="reset()">RESET</button></div>
+        </div>
+        <div>
+            <p class="Desc">Use the Toggle Button to Dark Mode And Light Mode</p>
+            <input type="checkbox" class="checkbox" id="chk">
+            <label for="chk" class="label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
